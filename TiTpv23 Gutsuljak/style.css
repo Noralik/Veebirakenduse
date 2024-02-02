@@ -2,7 +2,7 @@
 header{
 	color: green; /*teksti väar*/
 	background-color: black; /*tausta värv*/
-	font-family: "Arial", "Georgia";
+	font-family: "DejaVu Sans Mono", "monospace";
 	letter-spacing: 0.5cm;
 	text-align: center;
 }
@@ -23,12 +23,11 @@ main section{
 	padding: 4%;
 	width: 34%;
 }
-
 /*h2 mis on section sees*/
 main section h2{
 	color: green; /*teksti väar*/
 	background-color: black; /*tausta värv*/
-	font-family: "Arial", "Georgia";
+	font-family: "DejaVu Sans Mono", "monospace";
 	letter-spacing: 0.1cm;
 	text-align: center;
 }
@@ -53,7 +52,8 @@ li a {
   text-decoration: none;
   
 }
-
 li a:hover {
   background-color: #111;
+}
+img{border-radius: 85px;
 }
