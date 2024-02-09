@@ -1,0 +1,59 @@
+/*style.css*/
+header{
+	color: green; /*teksti väar*/
+	background-color: black; /*tausta värv*/
+	font-family: "DejaVu Sans Mono", "monospace";
+	letter-spacing: 0.5cm;
+	text-align: center;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	color: green;
+	background-color: black;
+	width: 100%;
+	text-align: center;	
+}
+
+main section{
+	border-left: 12pt solid green; /*dotted / dashed /soled*/
+	border-top: 12pt solid green;
+	border-radius: 55px;
+	padding: 4%;
+	width: 34%;
+}
+/*h2 mis on section sees*/
+main section h2{
+	color: green; /*teksti väar*/
+	background-color: black; /*tausta värv*/
+	font-family: "DejaVu Sans Mono", "monospace";
+	letter-spacing: 0.1cm;
+	text-align: center;
+}
+/*navigeerimismenüü w3shools lehelt*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+li a:hover {
+  background-color: #111;
+}
+img{border-radius: 85px;
+}
