@@ -1,0 +1,204 @@
+table{
+	width: 45%; /*45% ekraani laiust*/
+	height: 215px;
+	border: 1pt solid black
+}
+td{
+	border: 1pt solid black;
+	text-align: center; /*выравнивнивание текста*/
+}
+/*обратились к 1 строки*/
+#tabel1 tr:nth-child(1) td:nth-child(1){
+	background-color: #660066;
+}
+#tabel1 tr:nth-child(1) td:nth-child(2){
+	background-color: #610361;
+}
+#tabel1 tr:nth-child(1) td:nth-child(3){
+	background-color: #5c055c;
+}
+#tabel1 tr:nth-child(2) td:nth-child(1){
+	background-color: #520a52;
+}
+#tabel1 tr:nth-child(2) td:nth-child(2){
+	background-color: #4c0d4c;
+}
+#tabel1 tr:nth-child(2) td:nth-child(3){
+	background-color: #470f47;
+}
+#tabel1 tr:nth-child(3) td:nth-child(1){
+	background-color: #421242;
+}
+#tabel1 tr:nth-child(3) td:nth-child(2){
+	background-color: #3d143d;
+}
+#tabel1 tr:nth-child(3) td:nth-child(3){
+	background-color: #381738;
+}
+
+/*Eesti lipp*/
+#Eesti{
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+#Eesti td{
+	border:0;
+}
+/*1.Rida*/
+#Eesti tr:nth-child(1) {
+	background-color: blue;
+}
+/*2.Rida*/
+#Eesti tr:nth-child(2) {
+	background-color: black;
+}
+/*3.Rida*/
+#Eesti tr:nth-child(3) {
+	background-color: white;
+}
+
+
+/*Soome lipp*/
+#soome{
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+#soome td{
+	border:0;
+}
+/*1.Rida 1. lahter ja 3.rida*/
+#soome tr:nth-child(1) td:nth-child(1),
+#soome tr:nth-child(3) td:nth-child(1)	{
+	background-color: white;
+	width: 25%;
+	}
+/*1.Rida 2. lahter ja 3.rida*/
+#soome tr:nth-child(1) td:nth-child(2),
+#soome tr:nth-child(3) td:nth-child(2)	{
+	background-color: blue;
+	width: 15%;
+	}
+/*1.Rida 2. lahter ja 3.rida*/
+#soome tr:nth-child(2)	{
+	background-color: blue;
+	height: 20%;
+}
+/*1.Rida 3. lahter ja 3.rida*/
+#soome tr:nth-child(1) td:nth-child(3),
+#soome tr:nth-child(3) td:nth-child(3)	{
+	background-color: white;
+	}
+/*värvid plit*/
+#varvid tr:nth-child(1){
+	background-color: #660066;
+}
+#varvid tr:nth-child(2) td:nth-child(1){
+	background-color: #610361;
+}
+#varvid tr:nth-child(2) td:nth-child(2){
+	background-color: #5c055c;
+}
+#varvid tr:nth-child(3) td:nth-child(1){
+	background-color:#520a52;
+}
+#varvid tr:nth-child(3) td:nth-child(2){
+	background-color:#381738;
+}
+
+/*lipp1*/
+#lipp1{
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+#lipp1 td{
+	border:0;
+}
+/*1.Rida*/
+#lipp1 tr:nth-child(1) {
+	background-color: white;
+}
+/*2.Rida*/
+#lipp1 tr:nth-child(2) {
+	background-color: blue;
+}
+/*3.Rida*/
+#lipp1 tr:nth-child(3) {
+	background-color: red;
+}
+/*denmark lipp*/
+#lipp2{
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+/*denmark*/
+#lipp2 td{
+	border:0;
+}
+/*1.Rida 1. lahter ja 3.rida*/
+#lipp2 tr:nth-child(1) td:nth-child(1),
+#lipp2 tr:nth-child(3) td:nth-child(1)	{
+	background-color: red;
+	width: 25%;
+	}
+/*1.Rida 2. lahter ja 3.rida*/
+#lipp2 tr:nth-child(1) td:nth-child(2),
+#lipp2 tr:nth-child(3) td:nth-child(2)	{
+	background-color: white;
+	width: 15%;
+	}
+/*1.Rida 2. lahter ja 3.rida*/
+#lipp2 tr:nth-child(2)	{
+	background-color: white;
+	height: 20%;
+}
+/*1.Rida 3. lahter ja 3.rida*/
+#lipp2 tr:nth-child(1) td:nth-child(3),
+#lipp2 tr:nth-child(3) td:nth-child(3)	{
+	background-color: red;
+	}
+/*hungary*/
+#hungary {
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+#hungary  tr:nth-child(1) {
+	background-color: red;
+}
+/*2.Rida*/
+#hungary  tr:nth-child(2) {
+	background-color: white;
+}
+/*3.Rida*/
+#hungary  tr:nth-child(3) {
+	background-color: #004200;
+}
+/*france*/
+#France{
+	width: 330px;
+	height: 210px;
+	border: 1pt solid black;
+	border-spacing: 0;
+}
+#France td{
+	border:0;
+}
+#France td:nth-child(1) {
+	background-color: blue;
+}
+#France td:nth-child(2) {
+	background-color: white;
+}
+#France td:nth-child(3) {
+	background-color: red;
+}
+/*Island*/
