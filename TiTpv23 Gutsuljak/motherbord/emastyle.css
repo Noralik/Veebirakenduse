@@ -6,7 +6,7 @@ div{
     border-radius: 20px;
     padding: 1%;
     width: 200px;
-    position: 500,474;
-    left: 350px;
+    position: absolute;
+    left: 600px;
     top: 100px;
 }
