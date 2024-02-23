@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>õpilase ankeet tabelina</title>
+    <link rel="stylesheet" type="text/css" href="AnketaCSS.css">
+    <script src="nimiLugimine.js"></script>
+</head>
+<body>
+<h1>Õpilase ankeet tabelina</h1>
+<form>
+    <table border="1">
+<!--1 question-->
+        <tr>
+            <td>
+                <label for="nimi">Sisesta nimi:</label>
+            </td>
+            <td>
+                <input type="text" id="nimi" name="nimi" placeholder="Eesnimi">
+                <div id="vastus"></div>
+            </td>
+        </tr>
+<!--2 question-->
+        <tr>
+            <td>
+                <label for="Penimi">Sisesta perekonnanimi:</label>
+            </td>
+            <td>
+                <input type="text" id="Penimi" name="Penimi" placeholder="Perekonnanimi">
+                <div id="vastuses"></div>
+            </td>
+        </tr>
+<!--3 question-->
+        <tr>
+            <td>
+                <strong>Vali Eriala</strong>
+            </td>
+            <td>
+                <label for="it">Infotehnoloogia</label>
+                <input type="radio" id="IT" value="IT" placeholder="Infotehnoloogia" name="eriala">
+                <br>
+                <label for="juuksur">Juuksur</label>
+                <input type="radio" id="juuksur" value="juuksur" placeholder="Juuksur" name="eriala">
+                <br>
+                <label for="Meh">Mehhatroonika</label>
+                <input type="radio" id="Meh" value="Meh" placeholder="Mehhatroonika" name="eriala">
+                <br>
+                <label for="Rätsep">Rätsep</label>
+                <input type="radio" id="Rätsep" value="Rätsep" placeholder="Rätsep" name="eriala">
+
+            </td>
+        </tr>
+<!--4 question-->
+        <tr>
+            <td>
+                <strong>Elukoht:</strong>
+            </td>
+            <td>
+                <select name="linn" id="linn">
+                        <option value="vali">Palun vali</option>
+                    <option value="Tallinn">Tallinn</option>
+                    <option value="Tartu">Tartu</option>
+                    <option value="Narva">Narva</option>
+                    <option value="Paide">Paide</option>
+                  <option value="Keila">Keila</option>
+                </select>
+            </td>
+        </tr>
+<!--5 question-->
+        <tr>
+            <td>
+                <strong>Vali tehtud kursused</strong>
+            </td>
+            <td>
+                <input  type="checkbox" id="kurs1" value="1.kursus">
+                <label for="kurs1">1.kursur</label>
+                <br>
+                <input  type="checkbox" id="kurs2" value="2.kursus">
+                <label for="kurs2">2.kursur</label>
+                <br>
+                <input  type="checkbox" id="kurs3" value="3.kursus">
+                <label for="kurs3">3.kursur</label>
+            </td>
+        </tr>
+<!--6 question-->
+        <tr>
+            <td>
+                <strong>Vali Lemmik auto</strong>
+            </td>
+            <td>
+                <input type="radio" id="BMW" name="BMW" value="BMW">
+                <label for="BMW">BMW</label>
+                <br>
+                <input type="radio" id="Audi" name="Audi" value="Audi">
+                <label for="Audi">Audi</label>
+                <br>
+                <input type="radio" id="Mercedes" name="Mercedes" value="Mercedes">
+                <label for="Mercedes">Mercedes</label>
+                <br>
+                <input type="radio" id="Tesla" name="Tesla" value="Tesla">
+                <label for="Tesla">Tesla</label>
+                <br>
+                <input type="radio" id="Lexus" name="Lexus" value="Lexus">
+                <label for="Lexus">Lexus</label>
+                <br>
+                <input type="radio" id="Subaru" name="Subaru" value="Subaru">
+                <label for="Subaru">Subaru</label>
+            </td>
+        </tr>
+<!--7 question-->
+        <tr>
+            <td>
+                <strong>Kuupäev</strong>
+                <div id="answers"></div>
+            </td>
+            <td>
+                <input type="date" id="date" value="date" name="date">
+            </td>
+        </tr>
+        <tr>
+<!--fav color-->
+            <td>
+                <label for="color">vali lemmik color:</label>
+            </td>
+            <td>
+                <input type="color" id="color" name="color">
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
