@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>õpilase ankeet tabelina</title>
+    <link rel="stylesheet" type="text/css" href="AnketaCSS.css">
+    <script src="nimiLugimine.js"></script>
+</head>
+<body>
+<h1>Õpilase ankeet tabelina</h1>
+<form>
+    <table border="1">
+<!--1 question-->
+        <tr>
+            <td>
+                <label for="nimi">Sisesta nimi:</label>
+            </td>
+            <td>
+                <input type="text" id="nimi" name="nimi" placeholder="Eesnimi" oninput="sisestaNimi()">
+                <div id="vastus"></div>
+            </td>
+        </tr>
+<!--2 question-->
+        <tr>
+            <td>
+                <label for="Penimi">Sisesta perekonnanimi:</label>
+            </td>
+            <td>
+                <input type="text" id="Penimi" name="Penimi" placeholder="Perekonnanimi" oninput="perekonna()">
+                <div id="vastus2"></div>
+            </td>
+        </tr>
+<!--3 question-->
+        <tr>
+            <td>
+                <strong>Vali Eriala</strong>
+            </td>
+            <td>
+                <label for="it">Infotehnoloogia</label>
+                <input type="radio" id="IT" value="IT" placeholder="Infotehnoloogia" name="eriala" onchange="radioValik()">
+                <br>
+                <label for="juuksur">Juuksur</label>
+                <input type="radio" id="juuksur" value="juuksur" placeholder="Juuksur" name="eriala" onchange="radioValik()">
+                <br>
+                <label for="Meh">Mehhatroonika</label>
+                <input type="radio" id="Meh" value="Meh" placeholder="Mehhatroonika" name="eriala" onchange="radioValik()">
+                <br>
+                <label for="Rätsep">Rätsep</label>
+                <input type="radio" id="Rätsep" value="Rätsep" placeholder="Rätsep" name="eriala" onchange="radioValik()">
+                <div id="vastus3"></div>
+
+            </td>
+        </tr>
+<!--4 question-->
+        <tr>
+            <td>
+                <strong>Elukoht:</strong>
+            </td>
+            <td>
+                <label for="linn">Kust pärit sa oled?</label>
+                <select id="linn" onchange="selectValik()">
+                    <option value="vali..">Vali...</option>
+                    <option value="Tallinn">Tallinn</option>
+                    <option value="Turba">Turba</option>
+                    <option value="Kehra">Kehra</option>
+                    <option value="Narva">Narva</option>
+                    <option value="Aegvidu">Aegvidu</option>
+                    <option value="Viljandi">Viljandi</option>
+                    <option value="Maardu">Maardu</option>
+                    <option value="Tapu">Tapu</option>
+                    <option value="Pärni">Pärnu</option>
+                </select>
+                <div id="vastus4"></div>
+            </td>
+        </tr>
+<!--5 question-->
+        <tr>
+            <td>
+                <strong>Vali tehtud kursused</strong>
+            </td>
+            <td>
+                <input  type="checkbox" id="kurs1" value="1kursus" onchange="Kurs()">
+                <label for="kurs1">1.kursur</label>
+                <br>
+                <input  type="checkbox" id="kurs2" value="2kursus" onchange="Kurs()">
+                <label for="kurs2">2.kursur</label>
+                <br>
+                <input  type="checkbox" id="kurs3" value="3kursus" onchange="Kurs()">
+                <label for="kurs3">3.kursur</label>
+                <div id="vastus5"></div>
+            </td>
+        </tr>
+<!--6 question-->
+        <tr>
+            <td>
+                <strong>Vali Lemmik auto</strong>
+            </td>
+            <td>
+                <input type="checkbox" id="BMW" name="BMW" value="BMW" onchange="Vauto()">
+                <label for="BMW">BMW</label>
+                <br>
+                <input type="checkbox" id="Audi" name="Audi" value="Audi" onchange="Vauto()">
+                <label for="Audi">Audi</label>
+                <br>
+                <input type="checkbox" id="Mercedes" name="Mercedes" value="Mercedes" onchange="Vauto()">
+                <label for="Mercedes">Mercedes</label>
+                <br>
+                <input type="checkbox" id="Tesla" name="Tesla" value="Tesla" onchange="Vauto()">
+                <label for="Tesla">Tesla</label>
+                <br>
+                <input type="checkbox" id="Lexus" name="Lexus" value="Lexus" onchange="Vauto()">
+                <label for="Lexus">Lexus</label>
+                <br>
+                <input type="checkbox" id="Subaru" name="Subaru" value="Subaru" onchange="Vauto()">
+                <label for="Subaru">Subaru</label>
+                <div id="vastus6"></div>
+            </td>
+        </tr>
+<!--7 question-->
+        <tr>
+            <td>
+                <strong>Kuupäev</strong>
+                <div id="answers"></div>
+            </td>
+            <td>
+                <input type="date" id="date" value="date" name="date">
+            </td>
+        </tr>
+        <tr>
+<!--8 question-->
+        <tr>
+            <td>
+                <strong>Vali oma lmmikmuusika:</strong>
+            </td>
+        <td>
+            <input type="checkbox" id="Jazz" value="Jazz" onchange="checkboxValik()">
+            <label for="Jazz">Jazz</label>
+            <br>
+            <input type="checkbox" id="Popp" value="Popp" onchange="checkboxValik()">
+            <label for="Popp">Popp</label>
+            <br>
+            <input type="checkbox" id="Rock" value="Rock" onchange="checkboxValik()">
+            <label for="Rock">Rock</label>
+            <br>
+            <input type="checkbox" id="Metall" value="Metall" onchange="checkboxValik()">
+            <label for="Metall">Metall</label>
+            <br>
+            <input type="checkbox" id="Tehno" value="Tehno" onchange="checkboxValik()">
+            <label for="Tehno">Tehno</label>
+            <br>
+            <input type="checkbox" id="phonk" value="phonk" onchange="checkboxValik()">
+            <label for="phonk">phonk</label>
+            <br>
+            <input type="checkbox" id="Rap" value="Rap" onchange="checkboxValik()">
+            <label for="Rap">Rap</label>
+            <div id="vastus7"></div>
+        </td>
+        </tr>
+<!--fav color-->
+            <td>
+                <label for="color">vali lemmik color:</label>
+            </td>
+            <td>
+                <input type="color" id="color" name="color" onchange="favcolor()">
+                <div id="vastus8"></div>
+            </td>
+        </tr>
+    </table>
+
+
+    <div id="vastus9"></div>
+    <input type="reset" value="Puhasta" onclick="puhasta()">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
