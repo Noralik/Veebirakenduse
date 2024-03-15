@@ -146,8 +146,74 @@ function uks2(){
     uks3.fillStyle="violet"
     uks3.fillRect(145,100,35,35); //(x, y, laius, kõrgus)
 }
+//lilli//
+function stebel(){
+    let stebel=document.getElementById("tahvel").getContext("2d");
+    stebel.beginPath();
+    stebel.lineWidth="5";
+    stebel.strokeStyle="green";
+    stebel.moveTo(75,50);
+    stebel.lineTo(75, 200);
+    stebel.stroke();
+
+    let stebel2=document.getElementById("tahvel").getContext("2d");
+    stebel2.beginPath();
+    stebel2.lineWidth="5";
+    stebel2.strokeStyle="green";
+    stebel2.moveTo(125,50);
+    stebel2.lineTo(125, 200);
+    stebel2.stroke();
+
+    let stebel3=document.getElementById("tahvel").getContext("2d");
+    stebel3.beginPath();
+    stebel3.lineWidth="5";
+    stebel3.strokeStyle="green";
+    stebel3.moveTo(180,50);
+    stebel3.lineTo(180, 200);
+    stebel3.stroke();
+}
+function lipistki(){
+
+}
+
+function listok(){
+
+}
+
+function ceredina(){
+    let ceredina1=document.getElementById("tahvel").getContext("2d");
+    ceredina1.beginPath();
+    ceredina1.lineWidth="2";
+    ceredina1.fillStyle="gold";
+    ceredina1.arc(75, 50, 20, 0, 2*Math.PI, true);// (x, y, R)
+    ceredina1.fill();
+    ceredina1.stroke();
+
+    let ceredina2=document.getElementById("tahvel").getContext("2d");
+    ceredina2.beginPath();
+    ceredina2.lineWidth="2";
+    ceredina2.fillStyle="gold";
+    ceredina2.arc(125, 50, 20, 0, 2*Math.PI, true);// (x, y, R)
+    ceredina2.fill();
+    ceredina2.stroke();
+
+    let ceredina3=document.getElementById("tahvel").getContext("2d");
+    ceredina3.beginPath();
+    ceredina3.lineWidth="2";
+    ceredina3.fillStyle="gold";
+    ceredina3.arc(180, 50, 20, 0, 2*Math.PI, true);// (x, y, R)
+    ceredina3.fill();
+    ceredina3.stroke();
+}
+
+function lili(){
+    stebel();
+    lipistki();
+    listok();
+    ceredina();
+}
+
 function koik(){
-    rattad();
     Paike();
     matee();
     sammas();
@@ -156,4 +222,5 @@ function koik(){
     uks();
     aken();
     uks2();
+    rattad();
 }
