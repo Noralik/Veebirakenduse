@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulatorid</title>
+
+    <script src="CallScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleCalculator.css">
+</head>
+<body>
+
+<h1>Kalkulaatorid #1</h1>
+<div id="Kalk1">
+    <hr>
+    <h2>Arvude kalkulaator</h2>
+    <label for="arv1">arv1</label> <!--1 chislo-->
+    <input type="number" id="arv1" min="1" max="100" step="1">
+
+<!--tehe valik +, -, /, * %-->
+    <label for="valik1"></label>
+<select id="valik1" onchange="Korrutis()">
+    <option>Vali...</option>
+    <option>*</option>
+    <option>/</option>
+    <option>+</option>
+    <option>-</option>
+
+</select>
+
+    <label for="arv2">arv2</label> <!--2 chislo-->
+    <input type="number" id="arv2" min="1" max="100" step="1">
+    <input type="button" value="=" onclick="Korrutis()">
+    <div id="vastus1">Vastus on</div>
+</div>
+<br>
+<!--Temperatuuri kalkulator-->
+<div id="Kalk2">
+    <h2>Temperatuuri kalkulator</h2>
+
+    <label for="TempC">TempC</label> <!--1 chislo-->
+    <input type="number" id="TempC" min="-50" max="100" step="1" value="0">
+    <input type="button" value="Fahrengeit" onclick="temp()">
+    <div id="vastus2">Vastus on</div>
+</div>
+<br>
+<!--Diskriminant kalkulator-->
+<div id="Kalk3">
+    <h2>Diskriminant kalkulator</h2>
+
+    <label for="A">arv1</label> <!--1 chislo-->
+    <input type="number" id="A" min="-100" max="100" step="1">
+
+<!--    <label for="valik2"></label>
+<select id="valik2" onchange="Diskriminant()">
+    <option>Vali...</option>
+    <option>+</option>
+    <option>-</option>
+</select>
+-->
+    <label for="B">arv2</label> <!--2 chislo-->
+    <input type="number" id="B" min="-100" max="100" step="1">
+
+<!--    <label for="valik3"></label>
+<select id="valik3" onchange="Diskriminant()">
+    <option>Vali...</option>
+    <option>+</option>
+    <option>-</option>
+</select>
+-->
+
+    <label for="C">arv3</label> <!--4 chislo-->
+    <input type="number" id="C" min="-100" max="100" step="1">
+
+    <input type="button" value="Diskriminant" onclick="Diskriminant()">
+    <div id="vastus3">Vastus on</div>
+</div>
+
+</body>
+</html>
