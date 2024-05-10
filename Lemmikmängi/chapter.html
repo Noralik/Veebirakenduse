@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>League of Legends</title>
+    <link rel="stylesheet" type="text/css" href="Guide/Stylechapter.css">
+    <script src="JSChrapter.js"></script>
+</head>
+<body onload="juhuslikpilt()">
+<nav>
+    <ul>
+        <li>
+            <a href="LOL_league_of_legends.html">
+                League of legends
+            </a>
+        </li>
+        <li>
+            <a href="guide.html">
+                Guide
+            </a>
+        </li>
+        <li>
+            <a href="chapter.html">
+                characters
+            </a>
+        </li>
+        <li>
+            <a href="Test.html">
+                Test
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<h2>Sellel mängul on palju tegelaste variatsioone</h2>
+<table>
+    <tr>
+        <td id="tabel1">
+            <label for="valik">characters:</label>
+            <select id="valik" onchange="selectedValik()">
+                <option id="Checkbox">Vali...</option>
+                <option value="../Guide/braum.jpg" id="Checkbox1">braum</option>
+                <option value="../Guide/briar.jpg" id="Checkbox2">briar</option>
+                <option value="../Guide/caitlyn.jpg" id="Checkbox3">caitlyn</option>
+                <option value="../Guide/illaoi.jpg" id="Checkbox4">illaoi</option>
+                <option value="../Guide/kindrd.jpg" id="Checkbox5">kindred</option>
+                <option value="../Guide/mundo.jpg" id="Checkbox6">mundo</option>
+                <option value="../Guide/qiyana.jpg" id="Checkbox7">qiyana</option>
+            </select>
+            <div id="vastus"></div>
+        </td>
+        <td id="tabel2">
+            <img src="Puzzle/tyhi.png" id="random-pilt" alt="randoPilt">
+        </td>
+    </tr>
+    <!--teine rida-->
+    <tr>
+        <td id="tabel3">
+            <input type="radio" id="valik1" name="radionupp" value="../Guide/braum.jpg" onclick="radioValik()">
+            <label for="valik1">braum</label>
+            <br>
+            <input type="radio" id="valik2" name="radionupp" value="../Guide/briar.jpg" onclick="radioValik()">
+            <label for="valik2">briar</label>
+            <br>
+            <input type="radio" id="valik3" name="radionupp" value="../Guide/caitlyn.jpg" onclick="radioValik()">
+            <label for="valik3">caitlyn</label>
+            <br>
+            <input type="radio" id="valik4" name="radionupp" value="../Guide/illaoi.jpg" onclick="radioValik()">
+            <label for="valik4">illaoi</label>
+            <br>
+            <input type="radio" id="valik5" name="radionupp" value="../Guide/kindrd.jpg" onclick="radioValik()">
+            <label for="valik5">Kindred</label>
+            <br>
+            <input type="radio" id="valik6" name="radionupp" value="../Guide/mundo.jpg" onclick="radioValik()">
+            <label for="valik6">mundo</label>
+            <br>
+            <input type="radio" id="valik7" name="radionupp" value="../Guide/qiyana.jpg" onclick="radioValik()">
+            <label for="valik7">qiyana</label>
+        </td>
+        <td id="tabel4">
+            <img src="Puzzle/tyhi.png" id="pilt" alt="">
+        </td>
+    </tr>
+</table>
+<footer>
+    <p>Kontakt: dragon11time11play()gmail.com</p>
+    <p>J.G. &copy; 2024</p>
+</footer>
+</body>
+</html>
