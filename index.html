@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="JStyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <!--https://releases.jquery.com/-->
+    <title>Jaramir koduleht</title>
+    <meta charset="utf-8">
+    <!--подключаем css файл-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script>
+
+        function punaneseks(){
+            $('h2, #poli').css('color','red')
+        }
+        function mustaks(){
+            $('h2, #poli').css('color','green')
+        }
+        var lahti=true
+        function naitaPeida(){
+            $('#poli').slideToggle();
+            if(lahti){
+                lahti=false;
+                $('#nupp').val("näita");
+            }else{
+                lahti=true;
+                $('#nupp').val("peida");
+            }
+        }
+        <!--foto-->
+        function ElonM(event, ui){
+            var koht=ui.offset;
+            $('#koord1').html("Elon Musk "+koht.top +"*** "+koht.left);
+        }
+        function Pepefrog(event, ui){
+            var koht=ui.offset;
+            $('#koord2').html("Pepe Frog "+koht.top +"*** "+koht.left);
+        }
+        function Gnome(event, ui){
+            var koht=ui.offset;
+            $('#koord3').html("Gnome "+koht.top +"*** "+koht.left);
+        }
+        <!--start function-->
+        function start(){
+            $('#Elonm').draggable();
+            $('#Elonm').bind("drag", ElonM)
+            $('#Pepefrog').draggable();
+            $('#Pepefrog').bind("drag", Pepefrog)
+            $('#Gnome').draggable();
+            $('#Gnome').bind("drag", Gnome)
+            $('h1, h2, #poli,').mouseenter(punaneseks);
+            $('h1, h2, #poli,').mouseleave(mustaks);
+        }
+    </script>
+</head>
+<body onload="start()">
+<header>
+    <h1>Jaramir Koduleht</h1>
+</header>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">
+                Kodu
+            </a>
+        </li>
+        <li>
+            <a href="Lingid.html">
+                Lingid
+            </a>
+        </li>
+        <li>
+            <a href="Tood.html">
+                Tööd
+            </a>
+        </li>
+        <li>
+				<a href="wp/">
+				Wordpress
+				</a>
+		</li>
+        <li>
+                <a href="Lemmikmängi/LOL_league_of_legends.html">
+                league_of_legends
+                </a>
+		</li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Minu info:</h2>
+        <input type="button" value="paremale" onclick="$('#poli').animate({left: '600px'}, 1500)">
+        <input type="button" value="vasakule" onclick="$('#poli').animate({left: '0px'}, 1500)">
+        <input type="button" value="peida" onclick="naitaPeida()" id="nupp">
+
+        <div id="poli">Mina olen TiTpv23 õpilane,
+            <br>
+            Mina olen 17 aastat vana
+            <br>
+            mulle melldib joonistan ja magama
+        </div>
+
+        <img src="ElonMusk.jpg" alt="Elon" id="Elonm" width="100">
+        <img src="pepe.jpg" alt="pepe" id="Pepefrog" width="180">
+        <img src="gnome.jpg" alt="gnome" id="Gnome" width="350">
+        <div id="koord1"></div>
+        <div id="koord2"></div>
+        <div id="koord3"></div>
+    </section>
+</main>
+<footer>
+    <p>Kontakt: dragon11time11play()gmail.com</p>
+    J.G. &copy; 2024
+</footer>
+</body>
+</html>
