@@ -1,0 +1,126 @@
+/*style.css*/
+
+header {
+    color: green; /*teksti värv*/
+    background-color: black; /*tausta värv*/
+    font-family: "DejaVu Sans Mono", "monospace";
+    letter-spacing: 0.5cm;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: green;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+main section {
+    border-left: 12pt solid green; /*dotted / dashed /soled*/
+    border-top: 12pt solid green;
+    border-radius: 55px;
+    padding: 4%;
+    width: 34%;
+}
+
+/*h2 mis on section sees*/
+main section h2 {
+    color: green; /*teksti värv*/
+    background-color: black; /*tausta värv*/
+    font-family: "DejaVu Sans Mono", "monospace";
+    letter-spacing: 0.1cm;
+    text-align: center;
+}
+
+/*navigeerimismenüü w3schools lehelt*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#LogoLeague {
+    width: 45%;
+    float: right;
+    margin-top: 25px;
+}
+
+#LOL {
+    width: 35%;
+    float: left;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+body {
+    background-color: lightgrey;
+    color: blue;
+}
+
+/*style header*/
+h1, h2, h3, h4, h5, h6 {
+    background-color: darkblue;
+    color: goldenrod;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+div {
+    background-color: blue;
+    color: white;
+}
+
+/*color link*/
+a {
+    color: hotpink;
+}
+
+body {
+    background-image: url('wallapaper11.jpg');
+    background-size: 125%; /* чтобы изображение занимало всю доступную область */
+    background-position: center; /* чтобы изображение было выровнено по центру */
+}
+
+textarea {
+    margin-top: 50px;
+    margin-right: 5%;
+    width: 850px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
+    font-size: 18px; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Пожирненный шрифт */
+    color: black; /* Текст должен быть черным */
+}
+
+#pilt13, #pilt14, #pilt15, #pilt16, #pilt17, #pilt18, #pilt19, #pilt20, #pilt21, #pilt22,
+#pilt23, #pilt24,#pilt25, #pilt26,#pilt27 {
+    width: 100px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    border: 1px solid black; /* Граница изображения */
+}
+
+#validpilt{
+    width: 100px;
+    border: 1px solid black;
+}

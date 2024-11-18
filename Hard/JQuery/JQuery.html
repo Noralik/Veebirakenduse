@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="JStyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<!--https://releases.jquery.com/-->
+    <script>
+        function punaneseks(){
+            $('h1, h2, #reede').css('color','deeppink')
+        }
+        function mustaks(){
+            $('h1, h2, #reede').css('color','black')
+        }
+        var lahti=true
+        function naitaPeida(){
+            $('#reede').slideToggle();
+            if(lahti){
+                lahti=false;
+                $('#nupp').val("näita");
+            }else{
+                lahti=true;
+                $('#nupp').val("peida");
+            }
+        }
+        //loeb palli koorinati
+        function palliliikunine(event, ui){
+            var koht=ui.offset;
+            $('#koord1').html(koht.top +"*** "+koht.left);
+        }
+        function KoorPic(event, ui){
+            var koht=ui.offset;
+            $('#koord2').html(koht.top +"*** "+koht.left);
+        }
+
+        function start(){
+            $('#pall').draggable();
+            $('#pall').bind("drag", palliliikunine)
+            $('#PickM').draggable();
+            $('#PickM').bind("drag", KoorPic)
+            $('h1, h2, #reede').mouseenter(punaneseks);
+            $('h1, h2, #reede').mouseleave(mustaks);
+        }
+    </script>
+</head>
+<body onload="start()">
+
+<h1>jQuery kasutamine</h1>
+<input type="button" value="paremale" onclick="$('#reede').animate({left: '600px'}, 1500)">
+<input type="button" value="vasakule" onclick="$('#reede').animate({left: '0px'}, 1500)">
+<input type="button" value="peida" onclick="naitaPeida()" id="nupp">
+
+<div id="reede">Täna on reede!
+Tunnis me kasutame jQuery.
+Esimesena me kopeerimise jQuery CDN rammatokogu
+</div>
+<h2>Homme on laupäev</h2>
+<img src="football.png" alt="pall" id="pall">
+<div id="koord1"></div>
+<img src="kirkaM.png" alt="pick" id="PickM">
+<div id="koord2"></div>
+</body>
+</html>

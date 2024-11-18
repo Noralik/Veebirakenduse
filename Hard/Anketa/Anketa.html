@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Õpilase ANKEET</title>
+    <link rel="stylesheet" type="text/css" href="AnketaCSS.css">
+    <script src="nimiLugimine.js"></script>
+</head>
+<body>
+<h1>Õpilase Ankeet</h1>
+<form>
+    <!--tekstkast-->
+    <!--label = id input-->
+    <label for="nimi">Sisesta nimi:</label>
+    <input type="text" id="nimi" name="nimi" placeholder="Eesnimi" oninput="sisestaNimi()">
+    <div id="
+"></div>
+    <br>
+    <!--checkbox-->
+    <strong>Vali tehtud kursused</strong>
+    <br>
+    <input  type="checkbox" id="kurs1" value="1.kursus">
+    <label for="kurs1">1.kursur</label>
+    <br>
+    <input  type="checkbox" id="kurs2" value="2.kursus">
+    <label for="kurs2">2.kursur</label>
+    <br>
+    <input  type="checkbox" id="kurs3" value="3.kursus">
+    <label for="kurs3">3.kursur</label>
+    <br>
+    <!--radionupp-->
+    <strong>Vali Eriala</strong>
+    <!--id kogu aeg erinevad, aga *name* radionupus on üks-->
+    <br>
+    <input type="radio" id="it" value="IT" name="eriala">
+    <label for="it">Infotehnoloogia</label>
+    <br>
+    <input type="radio" id="juuksur" value="juuksur" name="eriala">
+    <label for="juuksur">Juuksur</label>
+    <br>
+    <input type="radio" id="meh" value="Meh" name="eriala">
+    <label for="meh">Mehhatroonika</label>
+    <br>
+    <input type="radio" id="ratsep" value="Rätsep" name="eriala">
+    <label for="ratsep">Rätsep</label>
+    <br>
+    <!--suur text kast-->
+    <strong>Kirjuta ennast:</strong>
+    <br>
+    <textarea id="kiri">
+oodetakse 100 sõnu
+    </textarea>
+    <br>
+    <!--ripploend - выподающий список-->
+    <label for="linn">Elukoht:</label>
+    <select name="linn" id="linn">
+        <option value="vali">Palun vali</option>
+        <option value="Tallinn">Tallinn</option>
+        <option value="Tartu">Tartu</option>
+        <option value="Narva">Narva</option>
+        <option value="Paide">Paide</option>
+        <option value="Keila">Keila</option>
+    </select>
+    <br>
+    <input type="button" value="Salvesta">
+    <input type="reset" value="Puhasta">
+</form>
+
+</body>
+</html>
