@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Sõnastik</title>
+
+    <link rel="stylesheet" type="text/css" href="SõnastikCSS.css">
+    <script src="SõnaScript.js"></script>
+</head>
+<body>
+<h1>Vene-eesti veebi Sõnade kontroll</h1>
+<hr>
+
+<table>
+    <tr>
+        <td>
+            <h3>Перевиди</h3>
+        </td>
+        <td>
+            <input type="button" value="Random Vene sõna" id="button1" onclick="RandomVeneSyna()">
+            <div id="random-syna"></div>
+        </td>
+        <td>
+            <input type="button" value="Random Inglise sõna" id="button2" onclick="RandomIngliseSyna()">
+            <div id="random-syna2"></div>
+        </td>
+        <td>
+            <input type="button" value="Random Inglise sõna" id="button3" onclick="RandomVeneSyna2()">
+            <div id="random-syna3"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="eestiSyna">Sista tõlge</label>
+        </td>
+        <td>
+            <input type="text" id="eestiSyna" name="eestiSyna" oninput="TekstKastiKontroll()">
+            <div id="vastus">На эстонский и Английский</div>
+        </td>
+        <td>
+            <input type="text" id="veneSyna" name="veneSyna" oninput="TekstKastiKontrollInglise()">
+            <div id="vastus2">На эстонский</div>
+        </td>
+        <td>
+            <input type="text" id="veneSyna3" name="Inglise" oninput="Tekstokontol()">
+            <div id="vastus3">На </div>
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

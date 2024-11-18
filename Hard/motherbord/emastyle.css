@@ -1,0 +1,12 @@
+h1{
+    background-color: darkslateblue;
+}
+div{
+    border: 1px solid firebrick;
+    border-radius: 20px;
+    padding: 1%;
+    width: 200px;
+    position: absolute;
+    left: 600px;
+    top: 130px;
+}
