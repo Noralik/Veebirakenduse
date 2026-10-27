@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Juhuslikud pildid (random)</title>
+    <script src="RandomScript.js"></script>
+    <link rel="stylesheet" href="JuhustlikCSS.css">
+</head>
+<body onload="juhuslikpilt()">
+
+<h1>Värskenda leht! (F5)</h1>
+6 pilte lisada kausta pildid
+
+<table>
+    <tr>
+
+        <td id="tabel1">
+            <label for="valik">Vali õige pilt:</label>
+            <select id="valik" onchange="selectedValik()">
+                <option id="Checkbox">Vali...</option>
+                <option value="Creeps.webp" id="Checkbox1">Creeps Dota</option>
+                <option value="DiamonMINE.jpg" id="Checkbox2">Diamond Minecraft</option>
+                <option value="s1mple.jpg" id="Checkbox3">S1mple</option>
+                <option value="Nasse.jpg" id="Checkbox4">Nasse</option>
+                <option value="Гигачад.jpg" id="Checkbox5">GiGa-Chad</option>
+                <option value="Walter.webp" id="Checkbox6">Walter White</option>
+            </select>
+            <div id="vastus"></div>
+        </td>
+        <td id="tabel2">
+            <img src="" id="random-pilt" alt="randoPilt" width="400px">
+        </td>
+    </tr>
+    <!--teine rida-->
+    <tr>
+        <td id="tabel3">
+            <input type="radio" id="valik1" name="radionupp" value="Creeps.webp" onclick="radioValik()">
+            <label for="valik1">Creeps dota</label>
+            <br>
+            <input type="radio" id="valik2" name="radionupp" value="DiamonMINE.jpg" onclick="radioValik()">
+            <label for="valik2">Diamond Minecraft</label>
+            <br>
+            <input type="radio" id="valik3" name="radionupp" value="s1mple.jpg" onclick="radioValik()">
+            <label for="valik3">s1mple</label>
+            <br>
+            <input type="radio" id="valik4" name="radionupp" value="Nasse.jpg" onclick="radioValik()">
+            <label for="valik4">Nasse</label>
+            <br>
+            <input type="radio" id="valik5" name="radionupp" value="Гигачад.jpg" onclick="radioValik()">
+            <label for="valik5">GiGa-Chad</label>
+            <br>
+            <input type="radio" id="valik6" name="radionupp" value="Walter.webp" onclick="radioValik()">
+            <label for="valik6">Walter White</label>
+        </td>
+        <td id="tabel4">
+            <img src="" id="pilt" alt="">
+        </td>
+    </tr>
+
+</table>
+
+
+
+</body>
+</html>

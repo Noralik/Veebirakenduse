@@ -1,0 +1,134 @@
+h1{
+    border-left: solid 3pt blanchedalmond;
+    border-top: solid 2pt blanchedalmond;
+    width: 320px;
+    border-radius: 10% 40%;
+    color: black;
+    background-color: lemonchiffon;
+    text-align: -webkit-center;
+    font-family: serif, fantasy;
+}
+/*текст всего*/
+body{
+    font-family: serif, fantasy;
+}
+table{
+    border: solid 2pt darkslateblue;
+    border-radius: 2px;
+    width: 60%;
+}
+td{
+    border: 2pt solid darkslateblue;
+    text-align: center; /*выравнивнивание текста*/
+}
+#tabel1{
+    background-color: azure;
+}
+#tabel2{
+    background-color: #66FFBF;
+}
+#tabel3{
+    background-color: #FF78;
+}
+#tabel4{
+    background-color: goldenrod;
+}
+/*border radius pilt*/
+#pilt{
+    border-radius: 85px;
+    width: 300px;
+    height: 200px;
+}
+#random-pilt{
+    border-radius: 85px;
+    width: 300px;
+    height: 200px;
+}
+/*Checkbox Radius*/
+#Checkbox{
+    background-color: #66FFBF;
+    font-family: serif;
+
+}
+#Checkbox1{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+#Checkbox2{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+#Checkbox3{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+#Checkbox4{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+#Checkbox5{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+#Checkbox6{
+    background-color: #66FFBF;
+    font-family: serif;
+}
+
+
+
+/*RadioNupp style*/
+html {
+    font-family: sans-serif;
+}
+
+div:first-of-type {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+label {
+    margin-right: 15px;
+    line-height: 32px;
+}
+
+input {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+}
+
+input:checked {
+    border: 6px solid black;
+}
+
+button,
+legend {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+}
+
+button:hover,
+button:focus {
+    color: #999;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}

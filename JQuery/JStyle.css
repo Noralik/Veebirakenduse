@@ -1,0 +1,10 @@
+#reede{
+    border-top: 2pt solid deeppink;
+    border-left: 2pt solid deeppink;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    padding: 20px;
+    position: relative;
+    left:0px;
+}

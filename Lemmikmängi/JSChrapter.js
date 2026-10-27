@@ -1,6 +1,6 @@
 function juhuslikpilt(){
     const pildid=[
-        '../Guide/braum.jpg', '../Guide/briar.jpg', '../Guide/caitlyn.jpg', '../Guide/illaoi.jpg', '../Guide/kindrd.jpg', '../Guide/mundo.jpg', '../Guide/qiyana.jpg'
+        '../Lemmikmängi/Guide/braum.jpg', '../Lemmikmängi/Guide/briar.jpg', '../Lemmikmängi/Guide/caitlyn.jpg', '../Lemmikmängi/Guide/illaoi.jpg', '../Lemmikmängi/Guide/kindrd.jpg', '../Lemmikmängi/Guide/mundo.jpg', '../Lemmikmängi/Guide/qiyana.jpg'
     ]; // 6 pilte
 
     //random pilt
